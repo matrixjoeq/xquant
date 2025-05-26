@@ -1,0 +1,11 @@
+tushare==1.4.21
+akshare==1.16.95
+pandas==2.2.3
+numpy==2.0.2
+SQLAlchemy==2.0.41
+python-dotenv==1.1.0
+requests==2.32.3
+pytest==8.3.5
+black==25.1.0
+isort==6.0.1
+mypy==1.15.0
