@@ -23,9 +23,9 @@ def main():
     db_url = f"sqlite:///{db_path.absolute()}"
     engine = create_engine(db_url)
 
-    # Set date range (last month)
+    # Set date range (10 years)
     end_date = datetime.now()
-    start_date = end_date - timedelta(days=30)
+    start_date = end_date - timedelta(days=365*10)  # 10 years of data
 
     # Format dates for API
     start_date_str = start_date.strftime('%Y%m%d')
@@ -64,12 +64,16 @@ def main():
             daily_data['date'] = pd.to_datetime(daily_data['date'])
 
             # Store data in database
-            daily_data.to_sql('daily_prices', engine, if_exists='append', index=False)
+            daily_data.to_sql('daily_prices', engine, if_exists='replace', index=False)
             logger.info(f"Successfully stored {len(daily_data)} records for {symbol}")
 
             # Print first few rows of data
             logger.info("\nFirst few records:")
             logger.info(daily_data.head().to_string())
+
+            # Print last few rows of data
+            logger.info("\nLast few records:")
+            logger.info(daily_data.tail().to_string())
         else:
             logger.warning(f"No data found for {symbol}")
 
