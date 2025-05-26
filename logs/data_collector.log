@@ -12,3 +12,144 @@ First few records:
 3 2025-05-06  1.334  1.329  1.336  1.327  1144073  1.522905e+08       0.68        1.14   0.015      5.51  159696
 4 2025-05-07  1.334  1.332  1.336  1.330  1222956  1.631307e+08       0.45        0.23   0.003      5.89  159696
 2025-05-26 22:20:06,675 [INFO] __main__: Chart saved to data/tushare/etf_chart.html
+2025-05-26 22:43:46,513 [INFO] __main__: Fetching daily data for 159696 from 20150529 to 20250526
+2025-05-26 22:43:48,801 [INFO] __main__: Successfully stored 420 records for 159696
+2025-05-26 22:43:48,801 [INFO] __main__: 
+First few records:
+2025-05-26 22:43:48,809 [INFO] __main__:         date   open  close   high    low  volume        amount  amplitude  pct_change  change  turnover  symbol
+0 2023-08-25  0.979  0.987  0.991  0.979  877886  8.664537e+07       1.20       -1.69  -0.017      4.23  159696
+1 2023-08-28  0.986  0.998  0.999  0.986  308221  3.068161e+07       1.32        1.11   0.011      1.48  159696
+2 2023-08-29  1.003  1.003  1.004  1.000  271438  2.719978e+07       0.40        0.50   0.005      1.31  159696
+3 2023-08-30  1.018  1.020  1.024  1.018  650348  6.644631e+07       0.60        1.69   0.017      3.13  159696
+4 2023-08-31  1.023  1.025  1.027  1.020  374345  3.835605e+07       0.69        0.49   0.005      1.80  159696
+2025-05-26 22:43:48,809 [INFO] __main__: 
+Last few records:
+2025-05-26 22:43:48,814 [INFO] __main__:           date   open  close   high    low   volume        amount  amplitude  pct_change  change  turnover  symbol
+415 2025-05-20  1.430  1.430  1.433  1.427  1661014  2.374783e+08       0.42        1.20   0.017      7.99  159696
+416 2025-05-21  1.428  1.418  1.428  1.417   969250  1.379835e+08       0.77       -0.84  -0.012      4.66  159696
+417 2025-05-22  1.407  1.412  1.413  1.407   704284  9.926140e+07       0.42       -0.42  -0.006      3.39  159696
+418 2025-05-23  1.411  1.405  1.412  1.405   632599  8.914007e+07       0.50       -0.50  -0.007      3.04  159696
+419 2025-05-26  1.409  1.410  1.411  1.405   847211  1.192421e+08       0.43        0.36   0.005      4.08  159696
+2025-05-26 22:43:54,651 [INFO] __main__: 
+Strategy Performance Metrics:
+2025-05-26 22:43:54,651 [INFO] __main__: Total Return: 9298063.68%
+2025-05-26 22:43:54,651 [INFO] __main__: Annual Return: 132420.94%
+2025-05-26 22:43:54,651 [INFO] __main__: Max Drawdown: -32676.55%
+2025-05-26 22:43:54,651 [INFO] __main__: Sharpe Ratio: 0.34
+2025-05-26 22:43:54,668 [INFO] __main__: 
+Detailed results saved to data/tushare/strategy_results.csv
+2025-05-26 22:44:18,686 [INFO] __main__: 
+Strategy Performance Metrics:
+2025-05-26 22:44:18,687 [INFO] __main__: Total Return: -10.10%
+2025-05-26 22:44:18,687 [INFO] __main__: Annual Return: -6.47%
+2025-05-26 22:44:18,687 [INFO] __main__: Max Drawdown: -25.77%
+2025-05-26 22:44:18,687 [INFO] __main__: Sharpe Ratio: -0.16
+2025-05-26 22:44:18,687 [INFO] __main__: Win Rate: 49.00%
+2025-05-26 22:44:18,687 [INFO] __main__: Number of Trades: 400
+2025-05-26 22:44:18,700 [INFO] __main__: 
+Detailed results saved to data/tushare/strategy_results.csv
+2025-05-26 22:52:37,205 [INFO] __main__: 
+Strategy Performance Metrics:
+2025-05-26 22:52:37,206 [INFO] __main__: Total Return: -3.84%
+2025-05-26 22:52:37,206 [INFO] __main__: Annual Return: -2.43%
+2025-05-26 22:52:37,206 [INFO] __main__: Max Drawdown: -24.37%
+2025-05-26 22:52:37,206 [INFO] __main__: Sharpe Ratio: 0.01
+2025-05-26 22:52:37,206 [INFO] __main__: Win Rate: 49.71%
+2025-05-26 22:52:37,206 [INFO] __main__: Number of Trades: 342
+2025-05-26 22:52:37,206 [INFO] __main__: Average Entry RSI: 66.54
+2025-05-26 22:52:37,206 [INFO] __main__: Average Exit RSI: 36.73
+2025-05-26 22:52:37,217 [INFO] __main__: 
+Detailed results saved to data/tushare/strategy_results.csv
+2025-05-26 22:54:34,613 [INFO] __main__: 
+Strategy Performance Metrics:
+2025-05-26 22:54:34,614 [INFO] __main__: Total Return: -1.36%
+2025-05-26 22:54:34,614 [INFO] __main__: Annual Return: -0.86%
+2025-05-26 22:54:34,614 [INFO] __main__: Max Drawdown: -17.11%
+2025-05-26 22:54:34,614 [INFO] __main__: Sharpe Ratio: 0.05
+2025-05-26 22:54:34,614 [INFO] __main__: Win Rate: 53.36%
+2025-05-26 22:54:34,614 [INFO] __main__: Number of Trades: 238
+2025-05-26 22:54:34,614 [INFO] __main__: Average Entry RSI: 70.03
+2025-05-26 22:54:34,614 [INFO] __main__: Average Exit RSI: 30.04
+2025-05-26 22:54:34,629 [INFO] __main__: 
+Detailed results saved to data/tushare/strategy_results.csv
+2025-05-26 22:59:39,319 [INFO] __main__: 
+Strategy Performance Metrics:
+2025-05-26 22:59:39,320 [INFO] __main__: Total Return: 2.17%
+2025-05-26 22:59:39,320 [INFO] __main__: Annual Return: 1.36%
+2025-05-26 22:59:39,320 [INFO] __main__: Max Drawdown: -14.51%
+2025-05-26 22:59:39,320 [INFO] __main__: Sharpe Ratio: 0.17
+2025-05-26 22:59:39,320 [INFO] __main__: Win Rate: 54.55%
+2025-05-26 22:59:39,320 [INFO] __main__: Number of Trades: 242
+2025-05-26 22:59:39,320 [INFO] __main__: Average Entry RSI: 69.97
+2025-05-26 22:59:39,320 [INFO] __main__: Average Exit RSI: 36.65
+2025-05-26 22:59:39,320 [INFO] __main__: Stop-Loss Hits: 0
+2025-05-26 22:59:39,320 [INFO] __main__: Trailing Stop Hits: 15
+2025-05-26 22:59:39,335 [INFO] __main__: 
+Detailed results saved to data/tushare/strategy_results.csv
+2025-05-26 23:02:51,727 [INFO] __main__: 
+Strategy Performance Metrics:
+2025-05-26 23:02:51,727 [INFO] __main__: Total Return: 5588632508433075886696097163417914160382689260437827691670373696095998756337626690219020486815941320290789920848084427833947744977310066443036764449834421980149945672556721530902621292092313992177048527140230354345666805760.00%
+2025-05-26 23:02:51,727 [INFO] __main__: Annual Return: 529654317600505936217509143690375043579656607845980695610847393223627820692769931761196216172477821913792239633418420147896233614034822234112.00%
+2025-05-26 23:02:51,727 [INFO] __main__: Max Drawdown: -79157517436457.64%
+2025-05-26 23:02:51,727 [INFO] __main__: Sharpe Ratio: 1.23
+2025-05-26 23:02:51,727 [INFO] __main__: Win Rate: 21.07%
+2025-05-26 23:02:51,727 [INFO] __main__: Number of Trades: 242
+2025-05-26 23:02:51,727 [INFO] __main__: Average Entry RSI: 69.97
+2025-05-26 23:02:51,727 [INFO] __main__: Average Exit RSI: 36.65
+2025-05-26 23:02:51,728 [INFO] __main__: Stop-Loss Hits: 0
+2025-05-26 23:02:51,728 [INFO] __main__: Trailing Stop Hits: 15
+2025-05-26 23:02:51,728 [INFO] __main__: Average Position Size: 45000.24
+2025-05-26 23:02:51,728 [INFO] __main__: Max Position Size: 259259.26
+2025-05-26 23:02:51,742 [INFO] __main__: 
+Detailed results saved to data/tushare/strategy_results.csv
+2025-05-26 23:03:15,555 [INFO] __main__: 
+Strategy Performance Metrics:
+2025-05-26 23:03:15,555 [INFO] __main__: Total Return: 10.51%
+2025-05-26 23:03:15,555 [INFO] __main__: Annual Return: 6.48%
+2025-05-26 23:03:15,555 [INFO] __main__: Max Drawdown: -7.21%
+2025-05-26 23:03:15,555 [INFO] __main__: Sharpe Ratio: 0.78
+2025-05-26 23:03:15,555 [INFO] __main__: Win Rate: 21.07%
+2025-05-26 23:03:15,555 [INFO] __main__: Number of Trades: 242
+2025-05-26 23:03:15,555 [INFO] __main__: Average Entry RSI: 69.97
+2025-05-26 23:03:15,555 [INFO] __main__: Average Exit RSI: 36.65
+2025-05-26 23:03:15,555 [INFO] __main__: Stop-Loss Hits: 0
+2025-05-26 23:03:15,555 [INFO] __main__: Trailing Stop Hits: 15
+2025-05-26 23:03:15,556 [INFO] __main__: Average Position Size: 28271.60
+2025-05-26 23:03:15,556 [INFO] __main__: Max Position Size: 99900.10
+2025-05-26 23:03:15,570 [INFO] __main__: 
+Detailed results saved to data/tushare/strategy_results.csv
+2025-05-26 23:12:24,074 [ERROR] __main__: Error running strategy: unsupported operand type(s) for -: 'str' and 'str'
+2025-05-26 23:12:40,009 [INFO] __main__: 
+Strategy Performance Metrics:
+2025-05-26 23:12:40,009 [INFO] __main__: Total Return: 10.51%
+2025-05-26 23:12:40,009 [INFO] __main__: Annual Return: 6.13%
+2025-05-26 23:12:40,009 [INFO] __main__: Max Drawdown: -7.21%
+2025-05-26 23:12:40,010 [INFO] __main__: Sharpe Ratio: 0.78
+2025-05-26 23:12:40,010 [INFO] __main__: Win Rate: 21.07%
+2025-05-26 23:12:40,010 [INFO] __main__: Number of Trades: 242
+2025-05-26 23:12:40,010 [INFO] __main__: Average Entry RSI: 69.97
+2025-05-26 23:12:40,010 [INFO] __main__: Average Exit RSI: 36.65
+2025-05-26 23:12:40,010 [INFO] __main__: Stop-Loss Hits: 0
+2025-05-26 23:12:40,010 [INFO] __main__: Trailing Stop Hits: 15
+2025-05-26 23:12:40,010 [INFO] __main__: Average Position Size: 28271.60
+2025-05-26 23:12:40,010 [INFO] __main__: Max Position Size: 99900.10
+2025-05-26 23:12:40,024 [INFO] __main__: 
+Detailed results saved to data/tushare/strategy_results.csv
+2025-05-26 23:23:09,430 [INFO] __main__: Fetching daily data for 159696 from 20150529 to 20250526
+2025-05-26 23:23:10,499 [INFO] __main__: Successfully stored 420 records for 159696
+2025-05-26 23:23:10,499 [INFO] __main__: 
+First few records:
+2025-05-26 23:23:10,508 [INFO] __main__:         date   open  close   high    low  volume        amount  amplitude  pct_change  change  turnover  symbol
+0 2023-08-25  0.979  0.987  0.991  0.979  877886  8.664537e+07       1.20       -1.69  -0.017      4.23  159696
+1 2023-08-28  0.986  0.998  0.999  0.986  308221  3.068161e+07       1.32        1.11   0.011      1.48  159696
+2 2023-08-29  1.003  1.003  1.004  1.000  271438  2.719978e+07       0.40        0.50   0.005      1.31  159696
+3 2023-08-30  1.018  1.020  1.024  1.018  650348  6.644631e+07       0.60        1.69   0.017      3.13  159696
+4 2023-08-31  1.023  1.025  1.027  1.020  374345  3.835605e+07       0.69        0.49   0.005      1.80  159696
+2025-05-26 23:23:10,508 [INFO] __main__: 
+Last few records:
+2025-05-26 23:23:10,513 [INFO] __main__:           date   open  close   high    low   volume        amount  amplitude  pct_change  change  turnover  symbol
+415 2025-05-20  1.430  1.430  1.433  1.427  1661014  2.374783e+08       0.42        1.20   0.017      7.99  159696
+416 2025-05-21  1.428  1.418  1.428  1.417   969250  1.379835e+08       0.77       -0.84  -0.012      4.66  159696
+417 2025-05-22  1.407  1.412  1.413  1.407   704284  9.926140e+07       0.42       -0.42  -0.006      3.39  159696
+418 2025-05-23  1.411  1.405  1.412  1.405   632599  8.914007e+07       0.50       -0.50  -0.007      3.04  159696
+419 2025-05-26  1.409  1.410  1.411  1.405   847211  1.192421e+08       0.43        0.36   0.005      4.08  159696
