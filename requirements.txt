@@ -1,7 +1,7 @@
 tushare==1.4.21
 akshare==1.16.95
 pandas==2.2.3
-numpy==2.0.2
+numpy>=2.2.3
 SQLAlchemy==2.0.41
 python-dotenv==1.1.0
 requests==2.32.3
