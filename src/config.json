@@ -1,0 +1,147 @@
+{
+    "paths": {
+        "root_dir": ".",
+        "data_dir": "data",
+        "akshare_dir": "data/akshare",
+        "reports_dir": "data/reports",
+        "strategy_dir": "src/strategy",
+        "backtest_dir": "data/backtest",
+        "logs_dir": "logs"
+    },
+    "database": {
+        "akshare": {
+            "path": "data/akshare/market_data.db",
+            "url": "sqlite:///data/akshare/market_data.db"
+        }
+    },
+    "date_range": {
+        "start_date": "20131201",
+        "end_date": "20250525"
+    },
+    "data_sources": {
+        "akshare": {
+            "name": "AKShare",
+            "description": "AKShare data source for Chinese market data",
+            "price_types": {
+                "non_restored": {
+                    "description": "Non-restored price"
+                },
+                "forward_restored": {
+                    "description": "Forward restored price (qfq)"
+                },
+                "backward_restored": {
+                    "description": "Backward restored price (hfq)"
+                }
+            },
+            "column_mapping": {
+                "日期": "date",
+                "开盘": "open",
+                "收盘": "close",
+                "最高": "high",
+                "最低": "low",
+                "成交量": "volume",
+                "成交额": "amount",
+                "振幅": "amplitude",
+                "涨跌幅": "pct_change",
+                "涨跌额": "change",
+                "换手率": "turnover"
+            }
+        }
+    },
+    "trading_universe": {
+        "etfs": {
+            "510300": {
+                "name": "CSI 300 ETF",
+                "description": "Tracks the CSI 300 Index"
+            },
+            "511010": {
+                "name": "Treasury Bond ETF",
+                "description": "Tracks China Treasury Bond Index"
+            },
+            "518880": {
+                "name": "Gold ETF",
+                "description": "Tracks Gold Price"
+            },
+            "513100": {
+                "name": "NASDAQ 100 ETF",
+                "description": "Tracks NASDAQ 100 Index"
+            }
+        }
+    },
+    "database_schemas": {
+        "daily_prices": {
+            "columns": [
+                "id",
+                "date",
+                "open",
+                "high",
+                "low",
+                "close",
+                "volume",
+                "amount",
+                "amplitude",
+                "pct_change",
+                "change",
+                "turnover",
+                "symbol",
+                "price_type"
+            ],
+            "dtypes": {
+                "id": "INTEGER PRIMARY KEY AUTOINCREMENT",
+                "date": "datetime64[ns]",
+                "open": "float64",
+                "high": "float64",
+                "low": "float64",
+                "close": "float64",
+                "volume": "float64",
+                "amount": "float64",
+                "amplitude": "float64",
+                "pct_change": "float64",
+                "change": "float64",
+                "turnover": "float64",
+                "symbol": "str",
+                "price_type": "str"
+            },
+            "constraints": [
+                "UNIQUE(date, symbol, price_type)"
+            ]
+        }
+    },
+    "validation": {
+        "rules": {
+            "daily_prices": {
+                "required_columns": [
+                    "date",
+                    "open",
+                    "high",
+                    "low",
+                    "close",
+                    "volume",
+                    "amount",
+                    "amplitude",
+                    "pct_change",
+                    "change",
+                    "turnover",
+                    "symbol",
+                    "price_type"
+                ],
+                "non_null_columns": [
+                    "date",
+                    "open",
+                    "high",
+                    "low",
+                    "close",
+                    "volume",
+                    "amount",
+                    "symbol",
+                    "price_type"
+                ]
+            }
+        },
+        "price_types": {
+            "non_restored": "Non-restored price",
+            "forward_restored": "Forward restored price (qfq)",
+            "backward_restored": "Backward restored price (hfq)"
+        }
+    }
+}
