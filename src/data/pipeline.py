@@ -1,13 +1,14 @@
+#!/usr/bin/env python3
 import logging
 from pathlib import Path
 from typing import Dict, List, Optional
 import pandas as pd
 from datetime import datetime
 import json
-from src.data.akshare_collector import AkShareCollector
-from src.data.database_manager import DatabaseManager
-from src.data.indicator_calculator import IndicatorCalculator
-from src.config_manager import ConfigManager
+from data.akshare_collector import AkShareCollector
+from data.database_manager import DatabaseManager
+from data.indicator_calculator import IndicatorCalculator
+from config_manager import ConfigManager
 
 
 class DataPipeline:

@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import akshare as ak
 import pandas as pd
 import sqlite3
@@ -9,7 +10,7 @@ import time
 import random
 from fake_useragent import UserAgent
 import requests
-from src.config_manager import ConfigManager
+from config_manager import ConfigManager
 
 
 class AkShareCollector:
@@ -173,11 +174,16 @@ class AkShareCollector:
             self.logger.error(f"Error storing data: {str(e)}")
             self.conn.rollback()
 
-    def collect_data(self) -> None:
-        """Collect data for all configured ETFs and price types."""
+    def collect_data(self) -> pd.DataFrame:
+        """Collect data for all configured ETFs and price types.
+        
+        Returns:
+            DataFrame containing all collected data
+        """
         etf_symbols = self.config.get_etf_symbols()
         price_types = self.config.get_price_types()
         date_range = self.config.get_date_range()
+        all_data = []
 
         self.logger.info(f"Starting data collection for {len(etf_symbols)} ETFs")
         self.logger.info(f"Date range: {date_range.start_date} to {date_range.end_date}")
@@ -208,11 +214,17 @@ class AkShareCollector:
                 # Store data
                 self._store_data(df)
                 self.logger.info(f"Successfully stored {len(df)} records for {symbol} ({price_type})")
-
-                # Return the collected DataFrame
-                return df
+                
+                # Add to collected data
+                all_data.append(df)
 
         self.logger.info("Data collection completed")
+        
+        # Combine all collected data
+        if all_data:
+            return pd.concat(all_data, ignore_index=True)
+        else:
+            return pd.DataFrame()  # Return empty DataFrame if no data was collected
 
     def close(self) -> None:
         """Close the database connection."""

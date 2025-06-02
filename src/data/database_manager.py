@@ -1,9 +1,10 @@
+#!/usr/bin/env python3
 import sqlite3
 from typing import Dict, List, Optional
 import pandas as pd
 from pathlib import Path
 import logging
-from src.config_manager import ConfigManager
+from config_manager import ConfigManager
 
 
 class DatabaseManager:
@@ -48,7 +49,8 @@ class DatabaseManager:
 
         create_prices_table_sql = f"""
         CREATE TABLE IF NOT EXISTS daily_prices (
-            {', '.join(columns)}
+            {', '.join(columns)},
+            UNIQUE(date, symbol, price_type)
         )
         """
 
@@ -77,7 +79,17 @@ class DatabaseManager:
             df: DataFrame containing price data
         """
         try:
-            df.to_sql('daily_prices', self.conn, if_exists='append', index=False)
+            # Check for existing entries
+            for _, row in df.iterrows():
+                query = """
+                SELECT * FROM daily_prices
+                WHERE date = ? AND symbol = ? AND price_type = ?
+                """
+                existing_data = pd.read_sql_query(query, self.conn, params=(row['date'], row['symbol'], row['price_type']))
+                if existing_data.empty:
+                    # Insert new data if it doesn't exist
+                    df_to_insert = pd.DataFrame([row])
+                    df_to_insert.to_sql('daily_prices', self.conn, if_exists='append', index=False)
             self.conn.commit()
         except Exception as e:
             self.logger.error(f"Error storing price data: {str(e)}")
