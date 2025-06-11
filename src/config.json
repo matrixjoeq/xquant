@@ -15,8 +15,8 @@
         }
     },
     "date_range": {
-        "start_date": "20131201",
-        "end_date": "20250525"
+        "start_date": "20140101",
+        "end_date": "20250531"
     },
     "data_sources": {
         "akshare": {
@@ -51,20 +51,64 @@
     "trading_universe": {
         "etfs": {
             "510300": {
-                "name": "CSI 300 ETF",
-                "description": "Tracks the CSI 300 Index"
-            },
-            "511010": {
-                "name": "Treasury Bond ETF",
-                "description": "Tracks China Treasury Bond Index"
-            },
-            "518880": {
-                "name": "Gold ETF",
-                "description": "Tracks Gold Price"
+                "name": "沪深300ETF",
+                "description": "跟踪沪深300指数"
             },
             "513100": {
-                "name": "NASDAQ 100 ETF",
-                "description": "Tracks NASDAQ 100 Index"
+                "name": "纳指ETF",
+                "description": "跟踪纳斯达克100指数"
+            },
+            "159561": {
+                "name": "德国ETF",
+                "description": "跟踪德国DAX指数"
+            },
+            "513520": {
+                "name": "日经ETF",
+                "description": "跟踪日经225指数"
+            },
+            "162411": {
+                "name": "华宝油气LOF",
+                "description": "跟踪标普石油天然气上游股票全收益指数"
+            },
+            "511580": {
+                "name": "国债政金债ETF",
+                "description": "跟踪中证国债及政金债0-3年指数"
+            },
+            "511130": {
+                "name": "30年国债ETF",
+                "description": "跟踪上证30年期国债指数"
+            },
+            "511180": {
+                "name": "上证可转债ETF",
+                "description": "跟踪上证投资级可转债及可转债券指数"
+            },
+            "511190": {
+                "name": "信用债ETF",
+                "description": "跟踪上证基准做市公司债指数"
+            },
+            "501300": {
+                "name": "美元债LOF",
+                "description": "主要跟踪巴克莱资本美国综合债券指数"
+            },
+            "518880": {
+                "name": "黄金ETF",
+                "description": "跟踪国内黄金现货价格"
+            },
+            "161226": {
+                "name": "国投白银LOF",
+                "description": "跟踪上海期货交易所白银期货主力合约"
+            },
+            "159985": {
+                "name": "豆粕ETF",
+                "description": "跟踪大连商品交易所豆粕期货价格指数"
+            },
+            "161129": {
+                "name": "原油LOF",
+                "description": "跟踪标普高盛原油商品指数"
+            },
+            "159980": {
+                "name": "有色ETF",
+                "description": "跟踪上海期货交易所有色金属期货价格指数"
             }
         }
     },
